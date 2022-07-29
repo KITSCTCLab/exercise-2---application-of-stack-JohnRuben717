@@ -7,7 +7,7 @@ class Evaluate:
   """
     # Write your code here
 
-  def _init_(self, size):
+def _init_(self, size):
     """Inits Evaluate with top, size_of_stack and stack.
     Arguments:
       top:An integer which points to the top most element in the stack.
@@ -19,7 +19,7 @@ class Evaluate:
     self.stack = []
 
 
-  def isEmpty(self):
+def isEmpty(self):
     """
     Check whether the stack is empty.
     Returns:
@@ -32,7 +32,7 @@ class Evaluate:
       return False
 
 
-  def pop(self):
+def pop(self):
     """
     Do pop operation if the stack is not empty.
     Returns:
@@ -42,8 +42,7 @@ class Evaluate:
     if not self.isEmpty():
       self.stack.pop()
 
-
-  def push(self, operand):
+def push(self, operand):
     """
     Push the operand to stack if the stack is not full.
     Arguments:
@@ -54,7 +53,7 @@ class Evaluate:
       self.stack.append(operand)
 
 
-  def validate_postfix_expression(self, expression):
+def validate_postfix_expression(self, expression):
     """
     Check whether the expression is a valid postfix expression.
     Arguments:
@@ -75,8 +74,7 @@ class Evaluate:
     else:
       return False
 
-
-  def evaluate_postfix_expression(self, expression):
+def evaluate_postfix_expression(self, expression):
     """
     Evaluate the postfix expression
     Arguments:
