@@ -7,7 +7,7 @@ class Evaluate:
   """
     # Write your code here
 
-  def init(self, size):
+  def __init__(self, size):
     """Inits Evaluate with top, size_of_stack and stack.
     Arguments:
       top:An integer which points to the top most element in the stack.
@@ -114,4 +114,4 @@ evaluate = Evaluate(len(tokens))
 if evaluate.validate_postfix_expression(tokens):
     print(evaluate.evaluate_postfix_expression(tokens))
 else:
-    print('Invalid postfix expression')\
+    print('Invalid postfix expression')
